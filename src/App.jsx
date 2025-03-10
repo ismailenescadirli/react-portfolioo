@@ -1,21 +1,14 @@
 import React, { useState } from "react";
-
-// Sayfa bileşenlerini import et
 import AnaSayfa from './pages/AnaSayfa';
 import Hakkimda from './pages/Hakkimda';
 import Iletisim from './pages/Iletisim';
-
-// Component'leri import et
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
-
-// Resmi import et
-import yourImage from './assets/ben.jpg'; // Resmi burada import ediyoruz
+import yourImage from './assets/ben.jpg'; 
 
 const App = () => {
   const [currentPage, setCurrentPage] = useState("home");
 
-  // Sayfa değiştirme fonksiyonu
   const navigate = (page) => {
     setCurrentPage(page);
   };
